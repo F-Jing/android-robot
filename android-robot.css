@@ -1,0 +1,203 @@
+.android {
+  width: 221px;
+  height: 242px;
+  margin: 300px auto;
+  position: relative;
+
+}
+
+.head {
+  display: block;
+  width: 145px;
+  height: 56px;
+  margin: 0 auto;
+  background-color: #ABC828;
+  border-top-left-radius: 72px 56px;
+  border-top-right-radius: 72px 56px;
+  position: relative;
+  -webkit-animation: android 2s ease-in-out infinite;
+}
+
+.eyes {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: absolute;
+  top: 28px;
+  background-color: honeydew;
+  -webkit-animation: eyes 2s ease-in-out infinite;
+}
+
+.eyes-left {
+  left: 38px;
+}
+
+.eyes-right {
+  right: 38px;
+}
+
+.touch {
+  width: 4px;
+  height: 30px;
+  position: absolute;
+  background-color: #ABC828;
+  border-radius: 2px;
+  top: -20px;
+  -webkit-animation: eyes 2s ease-in-out infinite;
+}
+
+.touch-left {
+  left: 38px;
+  transform: rotate(-40deg);
+}
+
+.touch-right {
+  right: 38px;
+  transform: rotate(40deg);
+}
+
+.body {
+  width: 145px;
+  height: 135px;
+  background-color: #ABC828;
+  margin: 6px auto;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: relative;
+  -webkit-animation: android 2s ease-in-out infinite;
+}
+
+.arm {
+  width: 30px;
+  height: 95px;
+  background-color: #ABC828;
+  position: absolute;
+  top: 10px;
+  border-radius: 20px;
+}
+
+.arm-left {
+  left: -32px;
+  -webkit-animation: body-a 2s ease-in-out infinite;
+}
+
+.arm-right {
+  right: -32px;
+  -webkit-animation: body-b 2s ease-in-out infinite;
+}
+
+.leg {
+  width: 30px;
+  height: 45px;
+  background-color: #ABC828;
+  border-radius: 20px;
+  bottom: -47px;
+  position: absolute;
+
+}
+
+.leg-left {
+  left: 30px;
+  -webkit-animation: body-b 2s ease-in-out infinite;
+}
+
+.leg-right {
+  right: 30px;
+  -webkit-animation: body-a 2s ease-in-out infinite;
+}
+
+.shadow {
+  width: 46px;
+  height: 30px;
+  background-color: #ccc;
+  border-radius: 23px 15px;
+  position: absolute;
+  bottom: -80px;
+  margin: 0 50%;
+  position: absolute;
+  left: -23px;
+  box-shadow: 0 0 10px 10px #ccc;
+  transform: scaleY(0.3);
+  -webkit-animation: shadow 2s ease-in-out infinite;
+}
+
+@-webkit-keyframes android {
+  0% {
+    top: 0;
+  }
+
+  50% {
+    top: -100px;
+  }
+
+  100% {
+    top: 0;
+  }
+}
+
+@-webkit-keyframes eyes {
+  0% {
+    background-color: rgb(236, 240, 219);
+  }
+
+  50% {
+    background-color: rgb(109, 40, 200);
+  }
+
+  100% {
+    background-color: rgb(216, 37, 37);
+  }
+}
+
+@-webkit-keyframes body-a {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(30deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes body-b {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(-30deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes shadow {
+  0% {
+    width: 46px;
+    height: 30px;
+    background: rgba(20, 20, 20, .1);
+    box-shadow: 0 0 25px 20px rgba(20, 20, 20, .1);
+  }
+
+  50% {
+    bottom: -20px;
+    width: 120px;
+    height: 30px;
+    left: -60px;
+    background: rgba(20, 20, 20, .3);
+    box-shadow: 0 0 25px 20px rgba(20, 20, 20, .3);
+  }
+
+  100% {
+    width: 46px;
+    height: 30px;
+    background: rgba(20, 20, 20, .1);
+    box-shadow: 0 0 25px 20px rgba(20, 20, 20, .1);
+  }
+}
